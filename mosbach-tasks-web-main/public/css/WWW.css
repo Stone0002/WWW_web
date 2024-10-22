@@ -1,0 +1,263 @@
+/* Globales CSS Reset - Setzt alle Box-Modell-Berechnungen auf border-box */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Grundlegende Einstellungen für die HTML- und Body-Tags */
+html, body {
+    font-family: Arial, sans-serif; /* Schriftart für die gesamte Seite */
+    height: 100%; /* Höhe auf 100% setzen, um volle Höhe zu nutzen */
+    overflow-x: hidden; /* Horizontales Scrollen verhindern */
+}
+
+/* Navigation - Hauptnavigationsleiste oben auf der Seite */
+.navbar {
+    display: flex; /* Flexbox zum Anordnen der Navigationselemente */
+    justify-content: space-between; /* Platzierung der Elemente: links und rechts */
+    align-items: center; /* Zentriert die Elemente vertikal */
+    background-color: #333; /* Dunkler Hintergrund */
+    color: white; /* Weiße Schriftfarbe */
+    padding: 10px 20px; /* Innenabstand oben/unten und links/rechts */
+    position: fixed; /* Fixiert die Navigation am oberen Rand */
+    top: 0; /* Positioniert die Navigation am oberen Rand */
+    left: 0; /* Linksbündig ausgerichtet */
+    width: 100%; /* Navigation erstreckt sich über die gesamte Breite */
+    z-index: 1000; /* Über andere Elemente schwebend */
+    border-radius: 10px 10px 0 0; /* Abgerundete obere Ecken */
+}
+
+/* Titel innerhalb der Navigation */
+.navbar h2 {
+    margin: 0; /* Kein Außenabstand */
+    font-size: 24px; /* Schriftgröße */
+    font-family: 'Poppins', sans-serif; /* Poppins-Schriftart */
+}
+
+/* Logo innerhalb der Navigation */
+.navbar .logo {
+    color: white; /* Weiße Schriftfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+/* Navigationslinks */
+.nav-links {
+    list-style-type: none; /* Entfernt Aufzählungszeichen */
+    display: flex; /* Flexbox für horizontale Anordnung der Links */
+    justify-content: center; /* Zentriert die Links horizontal */
+    align-items: center; /* Zentriert die Links vertikal */
+    flex-grow: 1; /* Füllt den verfügbaren Platz zwischen Logo und Auth-Buttons */
+}
+
+/* Einzelne Listenelemente der Navigationslinks */
+.nav-links li {
+    margin: 0 20px; /* Abstand zwischen den Links */
+    padding: 15px 0; /* Abstand oben und unten */
+}
+
+/* Link-Styling für die Navigation */
+.nav-links li a {
+    color: white; /* Weiße Schriftfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 18px; /* Schriftgröße */
+    padding: 10px; /* Innenabstand für die Links */
+    border-radius: 5px; /* Abgerundete Ecken */
+}
+
+/* Hover-Effekt für Navigationslinks */
+.nav-links li a:hover {
+    background-color: #575757; /* Hintergrundfarbe beim Überfahren */
+}
+
+/* Authentifizierungsbuttons (Anmelden, Registrieren etc.) */
+.auth-buttons {
+    display: flex; /* Flexbox zur horizontalen Ausrichtung der Buttons */
+    gap: 10px; /* Abstand zwischen den Buttons */
+}
+
+/* Button-Styling für Authentifizierungsbuttons */
+.auth-buttons button {
+    padding: 10px 20px; /* Innenabstand */
+    background-color: #575757; /* Dunkler Hintergrund */
+    color: white; /* Weiße Schriftfarbe */
+    border: none; /* Keine Rahmenlinie */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeigt eine Hand als Cursor an */
+    font-size: 18px; /* Schriftgröße */
+    font-family: 'Poppins', sans-serif; /* Poppins-Schriftart */
+}
+
+/* Hover-Effekt für Authentifizierungsbuttons */
+.auth-buttons button:hover {
+    background-color: #333; /* Hintergrundfarbe beim Überfahren */
+}
+
+/* Hero-Bild auf der Startseite */
+.hero-image {
+    background: url('https://www.metzgerei-steiner.it/wp-content/uploads/wildfleisch.jpg') center/cover; /* Hintergrundbild mit Zentrierung und Skalierung */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 560px; /* Höhe des Hero-Bildes */
+    position: relative; /* Ermöglicht die Positionierung von Kind-Elementen */
+    margin-top: 60px; /* Abstand von der Navigation */
+}
+
+/* Text-Overlay auf dem Hero-Bild */
+.hero-text {
+    position: absolute; /* Absolut positioniert im Hero-Bild */
+    top: 65px; /* Abstand vom oberen Rand */
+    left: 65px; /* Abstand vom linken Rand */
+    color: white; /* Weiße Schriftfarbe */
+    font-size: 65px; /* Große Schriftgröße */
+    font-family: 'Poppins', sans-serif; /* Poppins-Schriftart */
+    font-weight: 700; /* Fettgedruckt */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Textschatten für bessere Lesbarkeit */
+}
+
+/* Hauptinhalt der Seite */
+.main-content {
+    background-color: #f9f9f9; /* Hellgrauer Hintergrund */
+    padding: 20px; /* Innenabstand */
+    min-height: calc(100vh - 620px); /* Mindesthöhe, abhängig von der Höhe des Hero-Bildes */
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+}
+
+/* Überschriften und allgemeiner Text im Hauptinhalt */
+header h1, section h2 {
+    font-family: 'Poppins', sans-serif; /* Poppins-Schriftart */
+    color: #333; /* Dunkle Schriftfarbe */
+    margin-bottom: 20px; /* Abstand nach unten */
+    line-height: 1.4; /* Zeilenhöhe */
+}
+
+/* Hauptüberschrift */
+header h1 {
+    font-size: 36px; /* Große Schriftgröße */
+    margin-top: 30px; /* Abstand nach oben */
+}
+
+/* Sekundäre Überschrift */
+section h2 {
+    font-size: 28px; /* Etwas kleinere Schriftgröße */
+    margin-top: 30px; /* Abstand nach oben */
+}
+
+/* Absätze und Listenelemente */
+p, ul li {
+    font-size: 18px; /* Standard-Schriftgröße */
+    line-height: 1.6; /* Größere Zeilenhöhe für bessere Lesbarkeit */
+    color: #555; /* Mittelgraue Schriftfarbe */
+    margin-bottom: 20px; /* Abstand nach unten */
+}
+
+/* Aufzählungslisten */
+ul {
+    list-style-type: disc; /* Aufzählungszeichen als Punkte */
+    margin-left: 40px; /* Linker Einzug für die Liste */
+}
+
+/* Fettgedruckter Text innerhalb von Listen und Absätzen */
+ul li strong, p strong {
+    color: #333; /* Dunklere Schriftfarbe für Hervorhebung */
+}
+
+/* Produktübersicht mit Grid-Layout */
+.product-grid {
+    display: grid; /* Grid-Layout für die Produkte */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamische Spaltenbreite */
+    gap: 20px; /* Abstand zwischen den Karten */
+    padding: 20px; /* Innenabstand um das Grid */
+}
+
+/* Einzelne Produktkarten */
+.product-card {
+    background-color: #fff; /* Weißer Hintergrund */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatteneffekt */
+    text-align: center; /* Zentrierter Text */
+    padding: 10px; /* Innenabstand */
+    max-width: 300px; /* Maximale Breite */
+    margin: auto; /* Zentriert die Karte horizontal */
+}
+
+/* Bilder in den Produktkarten */
+.product-card img {
+    width: 100%; /* Bildbreite füllt die Karte */
+    border-radius: 10px 10px 0 0; /* Abgerundete obere Ecken */
+}
+
+/* Preisangabe in den Produktkarten */
+.product-price {
+    font-size: 20px; /* Schriftgröße für den Preis */
+    color: #333; /* Dunkle Schriftfarbe */
+    margin: 10px 0; /* Abstand oben und unten */
+}
+
+/* Auswahl der Produktmenge */
+.quantity-select {
+    margin: 10px 0; /* Abstand oben und unten */
+}
+
+/* Button zum Hinzufügen in den Warenkorb */
+.add-to-cart {
+    background-color: #575757; /* Hintergrundfarbe */
+    color: white; /* Weiße Schriftfarbe */
+    border: none; /* Keine Rahmenlinie */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 10px; /* Innenabstand */
+    cursor: pointer; /* Zeigt eine Hand als Cursor an */
+    font-size: 16px; /* Schriftgröße */
+}
+
+/* Hover-Effekt für den Warenkorb-Button */
+.add-to-cart:hover {
+    background-color: #333; /* Dunklere Hintergrundfarbe beim Überfahren */
+}
+
+/* Fußleiste der Seite */
+.footer-bar {
+    display: flex; /* Flexbox für die horizontale Anordnung der Elemente */
+    justify-content: space-between; /* Links und Text werden an den äußeren Rändern platziert */
+    align-items: center; /* Vertikale Ausrichtung der Elemente in der Mitte */
+    background-color: #333; /* Dunkler Hintergrund für die Fußleiste */
+    color: white; /* Weiße Schriftfarbe */
+    padding: 10px 20px; /* Innenabstand: 10px oben/unten, 20px links/rechts */
+    font-family: 'Poppins', sans-serif; /* Schriftart Poppins für den Text */
+    border-radius: 0 0 10px 10px; /* Abgerundete Ecken am unteren Rand der Fußleiste */
+}
+
+/* Stilierung der Links in der Fußleiste */
+.footer-links {
+    list-style-type: none; /* Entfernt die Standard-Aufzählungspunkte der Liste */
+    display: flex; /* Anordnung der Listenelemente in einer Reihe */
+    margin: 0; /* Kein Außenabstand für die Liste */
+}
+
+/* Listenelemente in der Fußleiste */
+.footer-links li {
+    margin: 0 10px; /* Abstand von 10px zwischen den Listenelementen */
+}
+
+/* Links in der Fußleiste */
+.footer-links li a {
+    color: white; /* Weiße Schriftfarbe für die Links */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 14px; /* Kleinere Schriftgröße für die Links */
+    padding: 5px 10px; /* Innenabstand um den Text herum: 5px oben/unten, 10px links/rechts */
+}
+
+/* Hover-Effekt für die Links in der Fußleiste */
+.footer-links li a:hover {
+    color: #ccc; /* Ändert die Schriftfarbe beim Überfahren zu hellgrau (#ccc) */
+}
+
+/* Text in der Fußleiste, z.B. Copyright */
+.footer-bar p {
+    margin: 0; /* Kein Außenabstand für den Absatz */
+    font-size: 14px; /* Kleinere Schriftgröße für den Text */
+    text-align: right; /* Rechtsbündige Ausrichtung des Textes */
+}
