@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Wilde Wurst Waren</title>
+    <link rel="stylesheet" href="css/WWW.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Spezifische CSS-Regeln für die Login-Seite */
+        html, body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+        }
+
+        .login-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-form button:hover {
+            background-color: #45a049;
+        }
+}
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+    <h2><a href="Homepage.html" class="logo">Wilde Wurst Waren</a></h2>
+    <ul class="nav-links">
+        <li><a href="Produkte.html">Produkte</a></li>
+        <li><a href="UeberUns.html">Über uns</a></li>
+        <li><a href="Impressum.html">Impressum</a></li>
+    </ul>
+
+    <!-- Login und Registrieren Buttons -->
+    <div class="auth-buttons">
+        <button onclick="location.href='Login.html'">Login</button>
+        <button onclick="location.href='Registrieren.html'">Registrieren</button>
+    </div>
+</div>
+
+<!-- Hauptinhalt -->
+<div class="main-content">
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="dashboard.html" method="post">
+            <input type="email" name="email" placeholder="E-Mail" required>
+            <input type="password" name="password" placeholder="Passwort" required>
+            <button type="submit">Anmelden</button>
+        </form>
+    </div>
+</div>
+
+<!-- Fußleiste -->
+<footer class="footer-bar">
+    <ul class="footer-links">
+        <li><a href="Produkte.html">Produkte</a></li>
+        <li><a href="UeberUns.html">Über uns</a></li>
+        <li><a href="Impressum.html">Impressum</a></li>
+    </ul>
+    <p>&copy; 2024 Wilde Wurst Waren. Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
